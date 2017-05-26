@@ -215,6 +215,90 @@ namespace HerbalismAndAlchemyTests
                         Rules = new List<OutcomeRule>()
                     }
                 }
+            },
+            new LocationTable()
+            {
+                Name = "testBadTable",
+                Outcomes = new List<TableOutcome>()
+                {
+                    new TableOutcome()
+                    {
+                        Name = "badReagent",
+                        OutcomeType = 0,
+                        Roll = 2,
+                        Rules = new List<OutcomeRule>()
+                    },
+                    new TableOutcome()
+                    {
+                        Name = "badReagent",
+                        OutcomeType = 0,
+                        Roll = 3,
+                        Rules = new List<OutcomeRule>()
+                    },
+                    new TableOutcome()
+                    {
+                        Name = "badReagent",
+                        OutcomeType = 0,
+                        Roll = 4,
+                        Rules = new List<OutcomeRule>()
+                    },
+                    new TableOutcome()
+                    {
+                        Name = "badReagent",
+                        OutcomeType = 0,
+                        Roll = 5,
+                        Rules = new List<OutcomeRule>()
+                    },
+                    new TableOutcome()
+                    {
+                        Name = "badReagent",
+                        OutcomeType = 0,
+                        Roll = 6,
+                        Rules = new List<OutcomeRule>()
+                    },
+                    new TableOutcome()
+                    {
+                        Name = "badReagent",
+                        OutcomeType = 0,
+                        Roll = 7,
+                        Rules = new List<OutcomeRule>()
+                    },
+                    new TableOutcome()
+                    {
+                        Name = "badReagent",
+                        OutcomeType = 0,
+                        Roll = 8,
+                        Rules = new List<OutcomeRule>()
+                    },
+                    new TableOutcome()
+                    {
+                        Name = "badReagent",
+                        OutcomeType = 0,
+                        Roll = 9,
+                        Rules = new List<OutcomeRule>()
+                    },
+                    new TableOutcome()
+                    {
+                        Name = "badReagent",
+                        OutcomeType = 0,
+                        Roll = 10,
+                        Rules = new List<OutcomeRule>()
+                    },
+                    new TableOutcome()
+                    {
+                        Name = "badReagent",
+                        OutcomeType = 0,
+                        Roll = 11,
+                        Rules = new List<OutcomeRule>()
+                    },
+                    new TableOutcome()
+                    {
+                        Name = "badReagent",
+                        OutcomeType = 0,
+                        Roll = 12,
+                        Rules = new List<OutcomeRule>()
+                    }
+                }
             }
         };
         List<Reagent> Reagents = new List<Reagent>()
@@ -510,8 +594,6 @@ namespace HerbalismAndAlchemyTests
             var results = herb.GetHerbalismResults(location, tableRoll, notTrackingProvisions: false, canFindElementalWater: true);
 
             AreHerbalismResultsValid(results);
-
-            Assert.IsFalse(results.Any(r => r.Reagent.Name.Equals("Elemental Water", StringComparison.InvariantCultureIgnoreCase)));
         }
 
         [Test()]
@@ -522,7 +604,7 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 12;
 
-            var results = herb.GetHerbalismResults(location, tableRoll, notTrackingProvisions: false, canFindElementalWater: true, elementalWaterRoll: 1);
+            var results = herb.GetHerbalismResults(location, tableRoll, canFindElementalWater: true, elementalWaterRoll: 1);
 
             AreHerbalismResultsValid(results);
 
@@ -537,11 +619,25 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 12;
 
-            var results = herb.GetHerbalismResults(location, tableRoll, notTrackingProvisions: false, canFindElementalWater: true, elementalWaterRoll: 75);
+            var results = herb.GetHerbalismResults(location, tableRoll, canFindElementalWater: true, elementalWaterRoll: 75);
 
             AreHerbalismResultsValid(results);
 
             Assert.IsTrue(results.First().Reagent.Name.Equals("Elemental Water", StringComparison.InvariantCultureIgnoreCase));
+        }
+
+        [Test()]
+        public void GetHerbalismResultsTest_NonExistantReagent()
+        {
+            var herb = new Herbalism(Tables, Reagents);
+
+            var location = "testBadTable";
+            var tableRoll = 12;
+
+            Assert.Throws<InvalidOperationException>(() => 
+            {
+                herb.GetHerbalismResults(location, tableRoll);
+            });
         }
 
         [Test()]
@@ -554,20 +650,6 @@ namespace HerbalismAndAlchemyTests
             var results = herb.RollHerbalismResults(location, nat20: true);
 
             AreHerbalismResultsValid(results);
-        }
-
-        [Ignore("Not stable")]
-        [Test()]
-        public void RollHerbalismResultsTest_AllValidLocations_Once()
-        {
-            var herb = new Herbalism();
-
-            foreach (var location in herb.ValidLocations)
-            {
-                var results = herb.RollHerbalismResults(location);
-
-                AreHerbalismResultsValid(results);
-            }
         }
     }
 }
