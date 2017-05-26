@@ -1,0 +1,819 @@
+﻿[
+  {
+    "Name": "Arctic",
+    "Outcomes": [
+      {
+        "Name": "Silver Hibiscus",
+        "Roll": 2,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Mortflesh Powder",
+        "Roll": 3,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Ironwood Heart",
+        "Roll": 4,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Frozen Seedlings",
+        "Roll": 5,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 6,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 7,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 8,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Arctic Creeper",
+        "Roll": 9,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Fennel Silk",
+        "Roll": 10,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Fiend's Ivy",
+        "Roll": 11,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Voidroot",
+        "Roll": 12,
+        "OutcomeType": 0,
+        "Rules": []
+      }
+    ]
+  },
+  {
+    "Name": "Coastal/Underwater",
+    "Outcomes": [
+      {
+        "Name": "Hydrathistle",
+        "Roll": 2,
+        "OutcomeType": 0,
+        "Rules": [
+          2
+        ]
+      },
+      {
+        "Name": "Amanita Cap",
+        "Roll": 3,
+        "OutcomeType": 0,
+        "Rules": [
+          3
+        ]
+      },
+      {
+        "Name": "Hyancinth Nectar",
+        "Roll": 4,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Chromus Slime",
+        "Roll": 5,
+        "OutcomeType": 0,
+        "Rules": [
+          2
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 6,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 7,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 8,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Lavender Sprig",
+        "Roll": 9,
+        "OutcomeType": 0,
+        "Rules": [
+          3
+        ]
+      },
+      {
+        "Name": "Blue Toadshade",
+        "Roll": 10,
+        "OutcomeType": 0,
+        "Rules": [
+          3
+        ]
+      },
+      {
+        "Name": "Wrackwort Bulbs",
+        "Roll": 11,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Cosmos Glond",
+        "Roll": 12,
+        "OutcomeType": 0,
+        "Rules": [
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Desert",
+    "Outcomes": [
+      {
+        "Name": "Cosmos Glond",
+        "Roll": 2,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Arrow Root",
+        "Roll": 3,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Dried Ephedra",
+        "Roll": 4,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Cactus Juice",
+        "Roll": 5,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 6,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 7,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 8,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Drakus Flower",
+        "Roll": 9,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Scillia Beans",
+        "Roll": 10,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Spineflower Berries",
+        "Roll": 11,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Voidroot",
+        "Roll": 12,
+        "OutcomeType": 0,
+        "Rules": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Forest",
+    "Outcomes": [
+      {
+        "Name": "Harrada Leaf",
+        "Roll": 2,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Nightshade Berries",
+        "Roll": 3,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Emetic Wax",
+        "Roll": 4,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Verdant Nettle",
+        "Roll": 5,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 6,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 7,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 8,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Arrow Root",
+        "Roll": 9,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Ironwood Heart",
+        "Roll": 10,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Blue Toadshade",
+        "Roll": 11,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Wisp Stalks",
+        "Roll": 12,
+        "OutcomeType": 0,
+        "Rules": [
+          5,
+          6
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Grasslands",
+    "Outcomes": [
+      {
+        "Name": "Harrada Leaf",
+        "Roll": 2,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Drakus Flower",
+        "Roll": 3,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Lavender Sprig",
+        "Roll": 4,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Arrow Root",
+        "Roll": 5,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 6,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 7,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 8,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Scillia Beans",
+        "Roll": 9,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Cactus Juice",
+        "Roll": 10,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Tail Leaf",
+        "Roll": 11,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Hyancinth Nectar",
+        "Roll": 12,
+        "OutcomeType": 0,
+        "Rules": []
+      }
+    ]
+  },
+  {
+    "Name": "Hills",
+    "Outcomes": [
+      {
+        "Name": "Devil's Bloodleaf",
+        "Roll": 2,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Nightshade Berries",
+        "Roll": 3,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Tail Leaf",
+        "Roll": 4,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Lavender Sprig",
+        "Roll": 5,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Common",
+        "Roll": 6,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 7,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 8,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Ironwood Heart",
+        "Roll": 9,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Gengko Brush",
+        "Roll": 10,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Rock Vine",
+        "Roll": 11,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Harrada Leaf",
+        "Roll": 12,
+        "OutcomeType": 0,
+        "Rules": []
+      }
+    ]
+  },
+  {
+    "Name": "Mountain",
+    "Outcomes": [
+      {
+        "Name": "Basilisk's Breath",
+        "Roll": 2,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Frozen Seedlings",
+        "Roll": 3,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Arctic Creeper",
+        "Roll": 4,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Dried Ephedra",
+        "Roll": 5,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Common",
+        "Roll": 6,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 7,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 8,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Drakus Flower",
+        "Roll": 9,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Luminous Cap Dust",
+        "Roll": 10,
+        "OutcomeType": 0,
+        "Rules": [
+          7
+        ]
+      },
+      {
+        "Name": "Rock Vine",
+        "Roll": 11,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Primordial Balm",
+        "Roll": 12,
+        "OutcomeType": 0,
+        "Rules": []
+      }
+    ]
+  },
+  {
+    "Name": "Swamp",
+    "Outcomes": [
+      {
+        "Name": "Devil's Bloodleaf",
+        "Roll": 2,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Spineflower Berries",
+        "Roll": 3,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Emetic Wax",
+        "Roll": 4,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Amanita Cap",
+        "Roll": 5,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 6,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 7,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Common",
+        "Roll": 8,
+        "OutcomeType": 1,
+        "Rules": [
+          1
+        ]
+      },
+      {
+        "Name": "Blue Toadshade",
+        "Roll": 9,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Wrackwort Bulbs",
+        "Roll": 10,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Hydrathistle",
+        "Roll": 11,
+        "OutcomeType": 0,
+        "Rules": [
+          8
+        ]
+      },
+      {
+        "Name": "Primordial Balm",
+        "Roll": 12,
+        "OutcomeType": 0,
+        "Rules": []
+      }
+    ]
+  },
+  {
+    "Name": "Underdark",
+    "Outcomes": [
+      {
+        "Name": "Primordial Balm",
+        "Roll": 2,
+        "OutcomeType": 0,
+        "Rules": [
+          2
+        ]
+      },
+      {
+        "Name": "Silver Hibiscus",
+        "Roll": 3,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Devil's Bloodleaf",
+        "Roll": 4,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Chromus Slime",
+        "Roll": 5,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Mortflesh Powder",
+        "Roll": 6,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Fennel Silk",
+        "Roll": 7,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Fiend's Ivy",
+        "Roll": 8,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Gengko Brush",
+        "Roll": 9,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Luminous Cap Dust",
+        "Roll": 10,
+        "OutcomeType": 0,
+        "Rules": [
+          0
+        ]
+      },
+      {
+        "Name": "Radiant Synthseed",
+        "Roll": 11,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Wisp Stalks",
+        "Roll": 12,
+        "OutcomeType": 0,
+        "Rules": []
+      }
+    ]
+  },
+  {
+    "Name": "Common",
+    "Outcomes": [
+      {
+        "Name": "Mandrake Root",
+        "Roll": 2,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Quicksilver Lichen",
+        "Roll": 3,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Quicksilver Lichen",
+        "Roll": 4,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Wild Sageroot",
+        "Roll": 5,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Wild Sageroot",
+        "Roll": 6,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Bloodgrass",
+        "Roll": 7,
+        "OutcomeType": 0,
+        "Rules": [
+          9
+        ]
+      },
+      {
+        "Name": "Wyrmtongue Petals",
+        "Roll": 8,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Wyrmtongue Petals",
+        "Roll": 9,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Milkweed Seeds",
+        "Roll": 10,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Milkweed Seeds",
+        "Roll": 11,
+        "OutcomeType": 0,
+        "Rules": []
+      },
+      {
+        "Name": "Mandrake Root",
+        "Roll": 12,
+        "OutcomeType": 0,
+        "Rules": []
+      }
+    ]
+  }
+]
