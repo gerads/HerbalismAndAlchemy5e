@@ -1,14 +1,18 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using HerbalismAndAlchemy;
 
-namespace HerbalismUnitTests
+namespace HerbalismAndAlchemy.Tests.Unit
 {
-    [TestClass]
-    public class UnitTest1
+    [TestFixture]
+    public class TestClass
     {
-        [TestMethod]
-        public void RollHerbalismResult_AllValidLocations()
+        [Test]
+        public void Herbalism_AllLocations()
         {
             var herbalism = new Herbalism();
 
