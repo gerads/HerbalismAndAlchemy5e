@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace HerbalismAndAlchemy.Tests
+namespace HerbalismAndAlchemyTests
 {
     [TestFixture()]
     public class HerbalismTests
