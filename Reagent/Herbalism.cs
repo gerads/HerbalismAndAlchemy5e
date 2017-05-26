@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Reflection;
 using Newtonsoft.Json;
+using System.Runtime.CompilerServices;
+
+[assembly: InternalsVisibleTo("Herbalism.Tests.Unit")]
 
 namespace HerbalismAndAlchemy
 {
