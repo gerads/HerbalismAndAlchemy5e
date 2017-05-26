@@ -295,7 +295,7 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 2;
 
-            var results = herb.GetHerbalismResults(location, tableRoll);
+            var results = herb.GetHerbalismResults(location, tableRoll, canFindElementalWater: false);
 
             AreHerbalismResultsValid(results);
         }
@@ -308,7 +308,7 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 3;
 
-            var results = herb.GetHerbalismResults(location, tableRoll);
+            var results = herb.GetHerbalismResults(location, tableRoll, canFindElementalWater: false);
 
             AreHerbalismResultsValid(results);
 
@@ -323,7 +323,7 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 4;
 
-            var results = herb.GetHerbalismResults(location, tableRoll);
+            var results = herb.GetHerbalismResults(location, tableRoll, canFindElementalWater: false);
 
             AreHerbalismResultsValid(results);
         }
@@ -336,7 +336,7 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 5;
 
-            var results = herb.GetHerbalismResults(location, tableRoll, onCoast: false);
+            var results = herb.GetHerbalismResults(location, tableRoll, onCoast: false, canFindElementalWater: false);
 
             AreHerbalismResultsValid(results);
         }
@@ -349,7 +349,7 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 5;
 
-            var results = herb.GetHerbalismResults(location, tableRoll, onCoast: true);
+            var results = herb.GetHerbalismResults(location, tableRoll, onCoast: true, canFindElementalWater: false);
 
             AreHerbalismResultsValid(results);
         }
@@ -362,7 +362,7 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 6;
 
-            var results = herb.GetHerbalismResults(location, tableRoll);
+            var results = herb.GetHerbalismResults(location, tableRoll, canFindElementalWater: false);
 
             AreHerbalismResultsValid(results);
 
@@ -377,7 +377,7 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 7;
 
-            var results = herb.GetHerbalismResults(location, tableRoll, isNight: false);
+            var results = herb.GetHerbalismResults(location, tableRoll, isNight: false, canFindElementalWater: false);
 
             AreHerbalismResultsValid(results);
         }
@@ -390,7 +390,7 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 7;
 
-            var results = herb.GetHerbalismResults(location, tableRoll, isNight: true);
+            var results = herb.GetHerbalismResults(location, tableRoll, isNight: true, canFindElementalWater: false);
 
             AreHerbalismResultsValid(results);
         }
@@ -403,7 +403,7 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 8;
 
-            var results = herb.GetHerbalismResults(location, tableRoll, isNight: true);
+            var results = herb.GetHerbalismResults(location, tableRoll, isNight: true, canFindElementalWater: false);
 
             AreHerbalismResultsValid(results);
         }
@@ -416,7 +416,7 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 8;
 
-            var results = herb.GetHerbalismResults(location, tableRoll, isNight: false);
+            var results = herb.GetHerbalismResults(location, tableRoll, isNight: false, canFindElementalWater: false);
 
             AreHerbalismResultsValid(results);
         }
@@ -429,7 +429,7 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 9;
 
-            var results = herb.GetHerbalismResults(location, tableRoll, inCave: false);
+            var results = herb.GetHerbalismResults(location, tableRoll, inCave: false, canFindElementalWater: false);
 
             AreHerbalismResultsValid(results);
         }
@@ -442,7 +442,7 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 9;
 
-            var results = herb.GetHerbalismResults(location, tableRoll, inCave: true);
+            var results = herb.GetHerbalismResults(location, tableRoll, inCave: true, canFindElementalWater: false);
 
             AreHerbalismResultsValid(results);
         }
@@ -455,7 +455,7 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 10;
 
-            var results = herb.GetHerbalismResults(location, tableRoll, isRaining: false);
+            var results = herb.GetHerbalismResults(location, tableRoll, isRaining: false, canFindElementalWater: false);
 
             AreHerbalismResultsValid(results);
         }
@@ -468,7 +468,7 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 10;
 
-            var results = herb.GetHerbalismResults(location, tableRoll, isRaining: true);
+            var results = herb.GetHerbalismResults(location, tableRoll, isRaining: true, canFindElementalWater: false);
 
             AreHerbalismResultsValid(results);
         }
@@ -481,7 +481,7 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 11;
 
-            var results = herb.GetHerbalismResults(location, tableRoll, notTrackingProvisions: true);
+            var results = herb.GetHerbalismResults(location, tableRoll, notTrackingProvisions: true, canFindElementalWater: false);
 
             AreHerbalismResultsValid(results);
         }
@@ -494,9 +494,54 @@ namespace HerbalismAndAlchemyTests
             var location = "testDefaultLocation";
             var tableRoll = 11;
 
-            var results = herb.GetHerbalismResults(location, tableRoll, notTrackingProvisions: false);
+            var results = herb.GetHerbalismResults(location, tableRoll, notTrackingProvisions: false, canFindElementalWater: false);
 
             AreHerbalismResultsValid(results);
+        }
+
+        [Test()]
+        public void GetHerbalismResultsTest_CanFindElementalWater_Random()
+        {
+            var herb = new Herbalism(Tables, Reagents);
+
+            var location = "testDefaultLocation";
+            var tableRoll = 12;
+
+            var results = herb.GetHerbalismResults(location, tableRoll, notTrackingProvisions: false, canFindElementalWater: true);
+
+            AreHerbalismResultsValid(results);
+
+            Assert.IsFalse(results.Any(r => r.Reagent.Name.Equals("Elemental Water", StringComparison.InvariantCultureIgnoreCase)));
+        }
+
+        [Test()]
+        public void GetHerbalismResultsTest_CanFindElementalWater_Roll1()
+        {
+            var herb = new Herbalism(Tables, Reagents);
+
+            var location = "testDefaultLocation";
+            var tableRoll = 12;
+
+            var results = herb.GetHerbalismResults(location, tableRoll, notTrackingProvisions: false, canFindElementalWater: true, elementalWaterRoll: 1);
+
+            AreHerbalismResultsValid(results);
+
+            Assert.IsFalse(results.Any(r => r.Reagent.Name.Equals("Elemental Water", StringComparison.InvariantCultureIgnoreCase)));
+        }
+
+        [Test()]
+        public void GetHerbalismResultsTest_CanFindElementalWater_Roll75()
+        {
+            var herb = new Herbalism(Tables, Reagents);
+
+            var location = "testDefaultLocation";
+            var tableRoll = 12;
+
+            var results = herb.GetHerbalismResults(location, tableRoll, notTrackingProvisions: false, canFindElementalWater: true, elementalWaterRoll: 75);
+
+            AreHerbalismResultsValid(results);
+
+            Assert.IsTrue(results.First().Reagent.Name.Equals("Elemental Water", StringComparison.InvariantCultureIgnoreCase));
         }
 
         [Test()]

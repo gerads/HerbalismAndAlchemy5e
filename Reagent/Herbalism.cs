@@ -171,13 +171,14 @@ namespace HerbalismAndAlchemy
             return reagent;
         }
 
-        internal IEnumerable<HerbalismResult> GetHerbalismResults(string locationName, int tableRoll, bool nat20 = false, bool onCoast = false, bool isNight = false, bool inCave = false, bool isRaining = false, bool notTrackingProvisions = false)
+        internal IEnumerable<HerbalismResult> GetHerbalismResults(string locationName, int tableRoll, bool nat20 = false, bool onCoast = false, bool isNight = false, bool inCave = false, bool isRaining = false, bool notTrackingProvisions = false, bool canFindElementalWater = true, int elementalWaterRoll = 0)
         {
             Reagent reagent = null;
             var outcomeRules = new List<OutcomeRule>();
 
             //find elemental water?
-            RollForElementalWater(tableRoll);
+            if (canFindElementalWater)
+                reagent = RollForElementalWater(tableRoll, elementalWaterRoll);
 
             //find a different reagent
             var tableName = locationName;
@@ -219,7 +220,7 @@ namespace HerbalismAndAlchemy
 
             //how many did you find?
             var reagentAmount = nat20 ? rand.Next(2, 8 + 1) : rand.Next(1, 4 + 1);
-            reagentAmount = ApplyRulesForReagentAmount(outcomeRules, reagentAmount);
+            reagentAmount = ApplyRulesForReagentAmount(outcomeRules, reagentAmount, onCoast, isNight, inCave, isRaining, notTrackingProvisions);
 
             //did you get anything else?
             var additionalReagents = ApplyRulesForAdditionalReagents(outcomeRules, onCoast, isNight, inCave, isRaining, notTrackingProvisions);
